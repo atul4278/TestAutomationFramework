@@ -1,0 +1,8 @@
+{
+    "app": {
+        "appUrl": "https://www.saucedemo.com",
+        "username": "standard_user"
+    },
+    "defaultBrowser": "Chrome",
+    "defaultWait": 30
+}
