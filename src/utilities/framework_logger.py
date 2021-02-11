@@ -7,8 +7,6 @@ import inspect
 
 def get_logger(name):
     # create logger
-    # x = inspect.stack()
-    # name = x[2].filename
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
 
@@ -19,7 +17,7 @@ def get_logger(name):
     fh.setLevel(logging.DEBUG)
 
     # create a formatter
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
 
     # add formatter to stream handler
     sh.setFormatter(formatter)
@@ -28,4 +26,7 @@ def get_logger(name):
     # add sh to logger
     logger.addHandler(sh)
     logger.addHandler(fh)
+    logger.info('='*50)
+    logger.info(f'TEST NAME: {name}')
+    logger.info('='*50)
     return logger

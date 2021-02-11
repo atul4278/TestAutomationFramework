@@ -1,7 +1,0 @@
-2021-01-05 11:54:38 INFO Logging Test 1
-er on Element with locator: ('id', 'user-name')
-2021-01-05 11:54:37 INFO Set secret_sauce on Element with locator: ('id', 'password')
-2021-01-05 11:54:39 INFO Clicked on Element with locator: ('id', 'login-button')
-2021-01-05 11:54:39 INFO Element found with locator: ('xpath', '//div[@id="inventory_filter_container"]//div[text()="Products"]')
-2021-01-05 11:54:39 INFO Login successful and user navigated to Producsts page.
-igated to Products page.

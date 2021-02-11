@@ -2,7 +2,7 @@ import logging
 
 from selenium.common.exceptions import NoSuchElementException
 from src.core.page import BasePage
-from src.pages.Product.locators import ProductPageLocators
+from src.pages.product.locators import ProductPageLocators
 
 from .locators import LoginPageLocators
 

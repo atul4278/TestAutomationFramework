@@ -1,8 +1,7 @@
 {
-    "app": {
-        "appUrl": "https://www.saucedemo.com",
-        "username": "standard_user"
-    },
-    "defaultBrowser": "Chrome",
+    "appUrl": "https://www.saucedemo.com",
+    "USERNAME": "standard_user",
+    "PASSWORD": "secret_sauce",
+    "defaultBrowser": "chrome",
     "defaultWait": 30
 }
