@@ -1,9 +1,10 @@
 """
-This file is not required as pytest has internal logging feaure which can be modified using pytest.ini file.
+This file may not be required as pytest has internal logging feature which can be modified using pytest.ini file.
 """
-
+import os
 import logging
-import inspect
+from conftest import ROOT_DIR
+
 
 def get_logger(name):
     # create logger
@@ -13,7 +14,8 @@ def get_logger(name):
     # create a stream handler
     sh = logging.StreamHandler()
     sh.setLevel(logging.DEBUG)
-    fh = logging.FileHandler(filename=f'/reports/logs/{name}.log', mode='a')
+    log_file = os.path.join(ROOT_DIR, f'reports/logs/{name}.log')
+    fh = logging.FileHandler(filename=log_file, mode='a')
     fh.setLevel(logging.DEBUG)
 
     # create a formatter

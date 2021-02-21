@@ -1,9 +1,11 @@
 import json
-
+import os
 import pytest
 
 from core.driver_manager import DriverManager
 
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action='store',default="chrome", help="browser used for execution")
