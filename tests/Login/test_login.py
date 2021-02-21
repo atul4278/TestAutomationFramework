@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 class TestLogin:
     def test_successfull_login(self):
         page = LoginPageActions(self.driver)
-        page.login(self.data['USERNAME'], self.data['PASWORD'])
+        page.login(self.data['USERNAME'], self.data['PASSWORD'])
         exists = page.verify_element_exists(ProductPageLocators.page_header)
         if exists:
             page.log.info('Login successful and user navigated to Producsts page.')
