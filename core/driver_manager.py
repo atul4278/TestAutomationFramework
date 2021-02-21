@@ -9,6 +9,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 class DriverManager:
+    @staticmethod
     def get_driver(brwsr, remote=False):
         if remote:
             if brwsr.lower() == 'chrome':

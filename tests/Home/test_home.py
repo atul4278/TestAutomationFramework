@@ -1,5 +1,5 @@
-from src.utilities.framework_logger import get_logger
-from src.pages.product.actions import ProductPageLocators, ProductsPageActions
+from utilities.framework_logger import get_logger
+from pages.product.actions import ProductPageLocators, ProductsPageActions
 
 class TestHome:
     def test_home1(self):

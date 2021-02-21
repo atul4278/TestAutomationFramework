@@ -1,9 +1,9 @@
 import os
-
+import datetime
 import selenium.webdriver.support.expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from src.utilities.framework_logger import get_logger
+from utilities.framework_logger import get_logger
 
 
 class BasePage:
@@ -18,9 +18,13 @@ class BasePage:
         self.log.info(f"Navigated to URL: {url}")
 
     def get_element(self, locator, timeout=30):
-        element = WebDriverWait(self.driver, timeout=timeout).until(
-            EC.element_to_be_clickable(locator))
-        return element
+        try:
+            element = WebDriverWait(self.driver, timeout=timeout).until(
+                EC.element_to_be_clickable(locator))
+            return element
+        except (NoSuchElementException, TimeoutException) as e:
+            self.log.error(e)
+            self.take_screenshot()
 
     def click(self, locator, timeout=30):
         element = self.get_element(locator)
@@ -47,3 +51,7 @@ class BasePage:
         except NoSuchElementException:
             self.log.info(f'Element NOT found with locator: {locator}')
             return False
+
+    def take_screenshot(self):
+        file_name = f'/src/reports/screenshots/SS_{datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S")}.png'
+        self.driver.save_screenshot(file_name)
