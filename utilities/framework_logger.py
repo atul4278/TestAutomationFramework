@@ -13,7 +13,7 @@ def get_logger(name):
     # create a stream handler
     sh = logging.StreamHandler()
     sh.setLevel(logging.DEBUG)
-    fh = logging.FileHandler(filename=f'reports/logs/{name}.log', mode='a')
+    fh = logging.FileHandler(filename=f'/reports/logs/{name}.log', mode='a')
     fh.setLevel(logging.DEBUG)
 
     # create a formatter
