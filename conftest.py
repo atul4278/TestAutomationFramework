@@ -3,7 +3,6 @@ import json
 import pytest
 
 from core.driver_manager import DriverManager
-from utilities import framework_logger as logger
 
 
 def pytest_addoption(parser):

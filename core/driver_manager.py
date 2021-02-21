@@ -19,7 +19,7 @@ class DriverManager:
             driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', desired_capabilities=capabilities)
         else:
             if brwsr.lower() == 'chrome':
-                driver = webdriver.Chrome()
+                driver = webdriver.Chrome(executable_path="/Users/atuljadhav/selenium_drivers/chromedriver")
             elif brwsr.lower() == 'firefox':
                 driver = webdriver.Firefox()
         

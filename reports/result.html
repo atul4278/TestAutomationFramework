@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Regression Results</h1>
-    <p>Report generated on 21-Feb-2021 at 12:33:25 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 21-Feb-2021 at 12:44:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,7 +259,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.1</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 10.94 seconds. </p>
+    <p>5 tests ran in 11.22 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,69 +275,35 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">tests/Login/test_login.py::TestLogin::test_successfull_login</td>
-          <td class="col-duration">8.73</td>
+          <td class="col-duration">7.44</td>
           <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div>Additional HTML</div></div>
-            <div class="log">[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/><br/>self = &lt;tests.Login.test_login.TestLogin object at 0x7fd4defedd60&gt;<br/><br/>    def test_successfull_login(self):<br/>        page = LoginPageActions(self.driver)<br/>&gt;       page.login(self.data[&#x27;USERNAME&#x27;], self.data[&#x27;PASWORD&#x27;])<br/><span class="error">E       KeyError: &#x27;PASWORD&#x27;</span><br/><br/>tests/Login/test_login.py:8: KeyError[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:33:24,214 - INFO: ==================================================
-2021-02-21 12:33:24,215 - INFO: TEST NAME: Log_test_successfull_login.log
-2021-02-21 12:33:24,216 - INFO: ==================================================
+            <div class="log">[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/><br/>self = &lt;tests.Login.test_login.TestLogin object at 0x7f9e32f92d90&gt;<br/><br/>    def test_successfull_login(self):<br/>        page = LoginPageActions(self.driver)<br/>&gt;       page.login(self.data[&#x27;USERNAME&#x27;], self.data[&#x27;PASWORD&#x27;])<br/><span class="error">E       KeyError: &#x27;PASWORD&#x27;</span><br/><br/>tests/Login/test_login.py:8: KeyError[gw2] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:44:29,459 - INFO: ==================================================
+2021-02-21 12:44:29,460 - INFO: TEST NAME: Log_test_successfull_login.log
+2021-02-21 12:44:29,460 - INFO: ==================================================
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_successfull_login.log:framework_logger.py:29 ==================================================
 INFO     Log_test_successfull_login.log:framework_logger.py:30 TEST NAME: Log_test_successfull_login.log
 INFO     Log_test_successfull_login.log:framework_logger.py:31 ==================================================<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/Home/test_home.py::TestHome::test_home2</td>
-          <td class="col-duration">7.98</td>
-          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:33:23,402 - INFO: ==================================================
-2021-02-21 12:33:23,403 - INFO: TEST NAME: Log_test_home2.log
-2021-02-21 12:33:23,404 - INFO: ==================================================
-2021-02-21 12:33:23,404 - INFO: Logging Test 2
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_home2.log:framework_logger.py:29 ==================================================
-INFO     Log_test_home2.log:framework_logger.py:30 TEST NAME: Log_test_home2.log
-INFO     Log_test_home2.log:framework_logger.py:31 ==================================================
-INFO     Log_test_home2.log:test_home.py:11 Logging Test 2<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/Home/test_home.py::TestHome::test_home1</td>
-          <td class="col-duration">8.26</td>
-          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:33:23,852 - INFO: ==================================================
-2021-02-21 12:33:23,852 - INFO: TEST NAME: Log_test_home1.log
-2021-02-21 12:33:23,853 - INFO: ==================================================
-2021-02-21 12:33:23,853 - INFO: Logging Test 1
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_home1.log:framework_logger.py:29 ==================================================
-INFO     Log_test_home1.log:framework_logger.py:30 TEST NAME: Log_test_home1.log
-INFO     Log_test_home1.log:framework_logger.py:31 ==================================================
-INFO     Log_test_home1.log:test_home.py:7 Logging Test 1<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
           <td class="col-name">tests/Login/test_login.py::TestLogin::test_locked_user</td>
-          <td class="col-duration">9.46</td>
+          <td class="col-duration">8.98</td>
           <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">[gw4] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw4] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw4] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw4] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:33:24,048 - INFO: ==================================================
-2021-02-21 12:33:24,049 - INFO: TEST NAME: Log_test_locked_user.log
-2021-02-21 12:33:24,050 - INFO: ==================================================
-2021-02-21 12:33:24,676 - INFO: Set locked_out_user on Element with locator: (&#x27;id&#x27;, &#x27;user-name&#x27;)
-2021-02-21 12:33:24,810 - INFO: Set secret_sauce on Element with locator: (&#x27;id&#x27;, &#x27;password&#x27;)
-2021-02-21 12:33:24,946 - INFO: Clicked on Element with locator: (&#x27;id&#x27;, &#x27;login-button&#x27;)
-2021-02-21 12:33:25,093 - INFO: Value Epic sadface: Sorry, this user has been locked out. fetched from locator: (&#x27;tag name&#x27;, &#x27;h3&#x27;)
-2021-02-21 12:33:25,093 - INFO: Login failed as expected. User not navigated to Products page.
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:44:28,974 - INFO: ==================================================
+2021-02-21 12:44:28,977 - INFO: TEST NAME: Log_test_locked_user.log
+2021-02-21 12:44:28,977 - INFO: ==================================================
+2021-02-21 12:44:29,926 - INFO: Set locked_out_user on Element with locator: (&#x27;id&#x27;, &#x27;user-name&#x27;)
+2021-02-21 12:44:30,189 - INFO: Set secret_sauce on Element with locator: (&#x27;id&#x27;, &#x27;password&#x27;)
+2021-02-21 12:44:30,638 - INFO: Clicked on Element with locator: (&#x27;id&#x27;, &#x27;login-button&#x27;)
+2021-02-21 12:44:30,951 - INFO: Value Epic sadface: Sorry, this user has been locked out. fetched from locator: (&#x27;tag name&#x27;, &#x27;h3&#x27;)
+2021-02-21 12:44:30,951 - INFO: Login failed as expected. User not navigated to Products page.
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_locked_user.log:framework_logger.py:29 ==================================================
 INFO     Log_test_locked_user.log:framework_logger.py:30 TEST NAME: Log_test_locked_user.log
 INFO     Log_test_locked_user.log:framework_logger.py:31 ==================================================
@@ -349,20 +315,54 @@ INFO     Log_test_locked_user.log:test_login.py:35 Login failed as expected. Use
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">tests/Home/test_home.py::TestHome::test_home1</td>
+          <td class="col-duration">8.75</td>
+          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw0] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:44:30,669 - INFO: ==================================================
+2021-02-21 12:44:30,671 - INFO: TEST NAME: Log_test_home1.log
+2021-02-21 12:44:30,671 - INFO: ==================================================
+2021-02-21 12:44:30,672 - INFO: Logging Test 1
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_home1.log:framework_logger.py:29 ==================================================
+INFO     Log_test_home1.log:framework_logger.py:30 TEST NAME: Log_test_home1.log
+INFO     Log_test_home1.log:framework_logger.py:31 ==================================================
+INFO     Log_test_home1.log:test_home.py:7 Logging Test 1<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Home/test_home.py::TestHome::test_home2</td>
+          <td class="col-duration">8.78</td>
+          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw1] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:44:30,752 - INFO: ==================================================
+2021-02-21 12:44:30,753 - INFO: TEST NAME: Log_test_home2.log
+2021-02-21 12:44:30,754 - INFO: ==================================================
+2021-02-21 12:44:30,755 - INFO: Logging Test 2
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_home2.log:framework_logger.py:29 ==================================================
+INFO     Log_test_home2.log:framework_logger.py:30 TEST NAME: Log_test_home2.log
+INFO     Log_test_home2.log:framework_logger.py:31 ==================================================
+INFO     Log_test_home2.log:test_home.py:11 Logging Test 2<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">tests/Login/test_login.py::TestLogin::test_failed_login</td>
-          <td class="col-duration">9.42</td>
+          <td class="col-duration">9.75</td>
           <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">[gw3] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/>[gw3] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw3] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9[gw3] darwin -- Python 3.9.1 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching App....
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:33:24,180 - INFO: ==================================================
-2021-02-21 12:33:24,181 - INFO: TEST NAME: Log_test_failed_login.log
-2021-02-21 12:33:24,182 - INFO: ==================================================
-2021-02-21 12:33:24,622 - INFO: Set standard_user on Element with locator: (&#x27;id&#x27;, &#x27;user-name&#x27;)
-2021-02-21 12:33:24,832 - INFO: Set asdafa on Element with locator: (&#x27;id&#x27;, &#x27;password&#x27;)
-2021-02-21 12:33:24,930 - INFO: Clicked on Element with locator: (&#x27;id&#x27;, &#x27;login-button&#x27;)
-2021-02-21 12:33:24,996 - INFO: Value Epic sadface: Username and password do not match any user in this service fetched from locator: (&#x27;tag name&#x27;, &#x27;h3&#x27;)
-2021-02-21 12:33:24,996 - INFO: Login failed as expected. User not navigated to Products page.
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-02-21 12:44:31,240 - INFO: ==================================================
+2021-02-21 12:44:31,241 - INFO: TEST NAME: Log_test_failed_login.log
+2021-02-21 12:44:31,241 - INFO: ==================================================
+2021-02-21 12:44:31,496 - INFO: Set standard_user on Element with locator: (&#x27;id&#x27;, &#x27;user-name&#x27;)
+2021-02-21 12:44:31,610 - INFO: Set asdafa on Element with locator: (&#x27;id&#x27;, &#x27;password&#x27;)
+2021-02-21 12:44:31,699 - INFO: Clicked on Element with locator: (&#x27;id&#x27;, &#x27;login-button&#x27;)
+2021-02-21 12:44:31,754 - INFO: Value Epic sadface: Username and password do not match any user in this service fetched from locator: (&#x27;tag name&#x27;, &#x27;h3&#x27;)
+2021-02-21 12:44:31,754 - INFO: Login failed as expected. User not navigated to Products page.
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Log_test_failed_login.log:framework_logger.py:29 ==================================================
 INFO     Log_test_failed_login.log:framework_logger.py:30 TEST NAME: Log_test_failed_login.log
 INFO     Log_test_failed_login.log:framework_logger.py:31 ==================================================
