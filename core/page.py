@@ -7,11 +7,13 @@ from utilities.framework_logger import get_logger
 
 
 class BasePage:
+    log = None
     def __init__(self, driver):
         self.driver = driver
-        self.test_name = os.environ.get(
-            'PYTEST_CURRENT_TEST').split(':')[-1].split(' ')[0]
-        self.log = get_logger(f'Log_{self.test_name}.log')
+        if not self.log:
+            self.test_name = os.environ.get(
+                'PYTEST_CURRENT_TEST').split(':')[-1].split(' ')[0]
+            self.log = get_logger(f'Log_{self.test_name}')
 
     def get(self, url):
         self.driver.get(url)
