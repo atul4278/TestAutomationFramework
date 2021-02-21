@@ -15,7 +15,7 @@ def get_logger(name):
     sh = logging.StreamHandler()
     sh.setLevel(logging.DEBUG)
     log_file = os.path.join(ROOT_DIR, f'reports/logs/{name}.log')
-    fh = logging.FileHandler(filename=log_file, mode='a')
+    fh = logging.FileHandler(filename=log_file, mode='w')
     fh.setLevel(logging.DEBUG)
 
     # create a formatter
@@ -30,5 +30,6 @@ def get_logger(name):
     logger.addHandler(fh)
     logger.info('='*50)
     logger.info(f'TEST NAME: {name}')
+    logger.info(f"ROOT_DIR: {ROOT_DIR}")
     logger.info('='*50)
     return logger
